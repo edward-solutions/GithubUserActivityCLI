@@ -15,9 +15,9 @@ namespace GithubUserActivityCLI
 
             var parts = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-            if (parts.Length > 2)
+            if (parts.Length != 2)
             {
-                error = "Invalid format: exceeding parameters";
+                error = "Invalid format: invalid parameters";
                 return false;
             }
 
